@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #00FF41;
+            --black: #0A0A0A;
+        }
+        h1 {
+            font-family: "VT323", monospace;
+            font-weight: 400;
+            font-style: normal;
+            color: var(--green);
+        }
+        body {
+            background-color: var(--black)
+        }
+
+        .main {
+            display: inline-block;
+        }
+
+        .main > h1 {
+            overflow: hidden;
+            border-right: .15em solid var(--green);
+            white-space: nowrap;
+            margin: 0;
+            width: 0;
+            animation:
+                typing 1.5s steps(40, end)
+                forwards
+        }
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Cursor effect */
+        @keyframes blink-cursor {
+            from, to { border-color: transparent }
+            50% { border-color: var(--green); }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- TODO: Add easter eggs -->
+        <h1>Wake up, Neo...</h1>
+    </div>
+</body>
+</html>
